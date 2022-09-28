@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3cH-u5-X2e">
+    <device id="ipad12_9" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="IMS-xM-b7c">
+            <objects>
+                <viewController id="3cH-u5-X2e" customClass="SplashViewController" customModule="NativeSpice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LeK-Q0-Vuu">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nativespice_Full" translatesAutoresizingMaskIntoConstraints="NO" id="bDL-ow-zRN">
+                                <rect key="frame" x="341" y="157" width="684" height="710"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="710" id="KbR-oj-fSd">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="400"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="400"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="684" id="Wqp-Jz-TgG">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="400"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="400"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="EoR-PV-ZIN">
+                                <rect key="frame" x="673" y="854" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="F1F-Vc-P3B">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="20" id="sDI-Fc-L21">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                                    </constraint>
+                                </constraints>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by Manikanta and Kshithija" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfx-3u-C1c">
+                                <rect key="frame" x="517.5" y="925" width="331.5" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Rft-iy-FIz">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wpd-oa-gN9"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EoR-PV-ZIN" firstAttribute="centerX" secondItem="LeK-Q0-Vuu" secondAttribute="centerX" id="Hwx-5D-CyN"/>
+                            <constraint firstItem="bDL-ow-zRN" firstAttribute="centerY" secondItem="LeK-Q0-Vuu" secondAttribute="centerY" id="Mn3-OD-VCJ"/>
+                            <constraint firstItem="wfx-3u-C1c" firstAttribute="centerX" secondItem="LeK-Q0-Vuu" secondAttribute="centerX" id="Q9v-TL-IJ8"/>
+                            <constraint firstItem="Wpd-oa-gN9" firstAttribute="bottom" secondItem="wfx-3u-C1c" secondAttribute="bottom" constant="75" id="VAE-gT-hcE">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="bDL-ow-zRN" firstAttribute="centerX" secondItem="LeK-Q0-Vuu" secondAttribute="centerX" id="aIw-HT-Pyk"/>
+                            <constraint firstItem="Wpd-oa-gN9" firstAttribute="bottom" secondItem="EoR-PV-ZIN" secondAttribute="bottom" constant="150" id="ihA-Eu-gbY">
+                                <variation key="heightClass=compact-widthClass=compact" constant="55"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="60"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FiH-Kz-jcW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-668" y="83"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ARScreen" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="NativeSpice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lbx-wp-C4j">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTs-6Q-yNr">
+                                <rect key="frame" x="75" y="864" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="IIx-Ot-Dwy">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="60" id="TMd-4M-bdz">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <imageReference key="image" image="homekit" catalog="system" symbolScale="large"/>
+                                    <backgroundConfiguration key="background"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="large"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="homeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FU0-0k-hiu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ev-4i-ebl">
+                                <rect key="frame" x="573" y="864" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="3t0-4f-ZUl">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="60" id="HX2-2i-4a7">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="chevron.left" catalog="system">
+                                    <backgroundConfiguration key="background"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="prevButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vcX-1b-Naz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epX-my-NHe">
+                                <rect key="frame" x="733" y="864" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Sb9-dJ-gcK">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="60" id="hSH-8q-nbS">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="chevron.right" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LKs-Uk-BTO"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Gf-k8-D4i" customClass="AlertView" customModule="NativeSpice" customModuleProvider="target">
+                                <rect key="frame" x="533" y="-128" width="300" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUW-eI-ZNE">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mB-SG-S9P">
+                                        <rect key="frame" x="0.0" y="64" width="300" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="OK!"/>
+                                        <connections>
+                                            <action selector="alertOKButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rxd-Ir-0vG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="iAd-jl-54E"/>
+                                    <constraint firstAttribute="height" constant="128" id="sav-jN-T85"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STu-gq-A02">
+                                <rect key="frame" x="654" y="490" width="58" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zz-mj-hbB">
+                                <rect key="frame" x="1231" y="864" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="TUI-It-tDH">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="60" id="xjY-Ha-F4a">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="questionmark" catalog="system">
+                                    <backgroundConfiguration key="background" cornerRadius="35"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="infoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zdf-RH-kl3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Lbx-wp-C4j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0LX-8f-mYb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerX" secondItem="5ev-4i-ebl" secondAttribute="trailing" constant="50" id="Cwq-as-kxa">
+                                <variation key="heightClass=compact-widthClass=compact" constant="30"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="jTs-6Q-yNr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="H5b-HC-4RC">
+                                <variation key="heightClass=compact-widthClass=compact" constant="30"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstAttribute="top" secondItem="1Gf-k8-D4i" secondAttribute="bottom" id="QSZ-FT-30N"/>
+                            <constraint firstItem="6zz-mj-hbB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-100" id="UNE-W6-SlI">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-30"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="-30"/>
+                            </constraint>
+                            <constraint firstItem="1Gf-k8-D4i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WiO-fx-YfH"/>
+                            <constraint firstItem="1Gf-k8-D4i" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-128" id="a8U-yv-ioO"/>
+                            <constraint firstItem="STu-gq-A02" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gyW-cb-2gK"/>
+                            <constraint firstItem="STu-gq-A02" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="haJ-3b-K1V"/>
+                            <constraint firstItem="Lbx-wp-C4j" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kTb-7a-a2c"/>
+                            <constraint firstItem="epX-my-NHe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-100" id="mJV-W2-g9i">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-30"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="-30"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="Lbx-wp-C4j" secondAttribute="trailing" id="pkC-MC-8LQ"/>
+                            <constraint firstItem="5ev-4i-ebl" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-100" id="q2S-6b-det">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-30"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="-30"/>
+                            </constraint>
+                            <constraint firstItem="epX-my-NHe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="50" id="sx1-Sn-9wy">
+                                <variation key="heightClass=compact-widthClass=compact" constant="30"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="Lbx-wp-C4j" secondAttribute="bottom" id="tBT-0i-M3L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6zz-mj-hbB" secondAttribute="trailing" constant="75" id="uAA-Sl-QH0">
+                                <variation key="heightClass=compact-widthClass=compact" constant="30"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="jTs-6Q-yNr" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-100" id="ur3-I4-t64">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-30"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="-30"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="1366" height="1024"/>
+                    <connections>
+                        <outlet property="alertText" destination="wUW-eI-ZNE" id="VER-72-tGE"/>
+                        <outlet property="alertView" destination="1Gf-k8-D4i" id="Rpg-nh-0x4"/>
+                        <outlet property="arSceneView" destination="Lbx-wp-C4j" id="2Rh-6L-9Ll"/>
+                        <outlet property="homeButton" destination="jTs-6Q-yNr" id="nLt-zh-cia"/>
+                        <outlet property="infoButton" destination="6zz-mj-hbB" id="Mdj-A1-nVU"/>
+                        <outlet property="nextButton" destination="epX-my-NHe" id="LQE-FW-7RR"/>
+                        <outlet property="plusButton" destination="STu-gq-A02" id="mHd-uA-qa0"/>
+                        <outlet property="prevButton" destination="5ev-4i-ebl" id="awK-sS-rb0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.448023426061493" y="83.203125"/>
+        </scene>
+        <!--Onboarding View Controller-->
+        <scene sceneID="wSO-60-0qT">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" id="E9o-Ci-sVC" customClass="OnboardingViewController" customModule="NativeSpice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Ek-ug-G7z">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agr-B1-Sm4">
+                                <rect key="frame" x="308" y="0.0" width="750" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="CYK-aw-txs">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="290"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="290"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="750" id="ZrN-lA-Zqq">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="600"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="600"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sez-BJ-X6D">
+                                <rect key="frame" x="533" y="500" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="YRH-p5-VZb">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="100"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="100" id="cXc-wd-qg8">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="OK!">
+                                    <backgroundConfiguration key="background"/>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onboardButton:" destination="E9o-Ci-sVC" eventType="touchUpInside" id="et6-JR-abb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2NJ-8x-pBP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="agr-B1-Sm4" firstAttribute="top" secondItem="8Ek-ug-G7z" secondAttribute="top" id="CTb-lu-0kO"/>
+                            <constraint firstItem="Sez-BJ-X6D" firstAttribute="centerX" secondItem="8Ek-ug-G7z" secondAttribute="centerX" id="Eet-zj-TBU"/>
+                            <constraint firstItem="Sez-BJ-X6D" firstAttribute="top" secondItem="agr-B1-Sm4" secondAttribute="bottom" id="H2u-Hi-3FY"/>
+                            <constraint firstItem="agr-B1-Sm4" firstAttribute="centerX" secondItem="8Ek-ug-G7z" secondAttribute="centerX" id="LVp-Nf-FJH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="onboardMessage" destination="agr-B1-Sm4" id="Meh-ph-6G1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cVS-4L-z1C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="803" y="83"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Nativespice_Full" width="1024" height="1024"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="questionmark" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
